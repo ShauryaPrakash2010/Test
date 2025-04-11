@@ -1,0 +1,222 @@
+body { /*For the image and card formatting*/
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url('hi.jpeg');
+  border-radius: 20px;
+  background-size: cover;      
+  background-position: center;  
+  background-repeat: no-repeat;
+  overflow: hidden;             /* Prevent scrollbars */
+  
+}
+.box { /*Main card*/
+  position: relative;
+  margin-right: 370px;
+  height: 80vh;
+  width: 40vh;
+  background-color: #FFFFFF20;
+  border-radius: 30px;
+  backdrop-filter: blur(6px);
+  display: flex;
+ color:white;
+justify-content: space-evenly;
+ animation: fadeIn 3s ease-in-out;
+}
+.sbox {/*topmost card*/
+  position: absolute;
+  top: 0;
+  height: 19vh;
+  width: 40vh;
+  background-color: #FFFFFF80;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 10px;
+  gap: 5px; /* clean and minimal spacing between time and date */
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  height: 7vh;
+  width: 40vh;
+  background-color: #FFFFFF80;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.time {/*time in sbox*/
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  font-size: 150px;
+  margin: 0;
+  line-height: 1;
+}
+
+.date {/*date in sbox*/
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size:26px;
+  margin-left:140px;
+  line-height: 1;
+  color: #E09595;
+}
+
+.weather{/*weathee in sbox*/
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  margin: 0;
+  line-height: 1;
+color:  #FFBF00;
+}
+
+.rweather {
+  margin-top: 0px;
+  display: flex;
+  background-color: #FFFFFF80;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  height: 6vh;
+  width: 18vh;
+  font-family:'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 250;
+  justify-content: center;
+  align-items: center;
+  color :#80D7FF;
+}
+ 
+.rtasks{
+  margin-top: 0px;
+  display: flex;
+  background-color: #FFFFFF80;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  height: 6vh;
+  width: 18vh;
+  font-family:'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 250;
+  justify-content: center;
+  align-items: center;
+  color :#727BFD;
+}
+ 
+
+.spa_n {/*two middle cards*/
+  height: 37.4vh;
+  width: 18vh;
+  background-color: #FFFFFF50;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+margin-top: 275px;
+
+}
+
+.sbox2{/*bottom card*/
+  position: absolute;
+  bottom: 0;
+  height: 20vh;
+  width: 40vh;
+  background-color: #FFFFFF50;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  
+.quote{
+  margin-top: 0px;
+  display: flex;
+  background-color: #FFFFFF80;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  height: 5vh;
+  width: 40vh;
+  font-family:'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 250;
+  justify-content: center;
+  align-items: center;
+  color :#727BFD;
+  
+}
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.box {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 0s;
+}
+
+.sbox {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.time {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 1s;
+}
+
+.date {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 1.5s;
+}
+
+.weather {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 2s;
+}
+
+.spa_n {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 2.5s;
+}
+
+.sbox2 {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 3.5s;
+}
+  .rweather, .rtasks {
+  opacity:0;
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 3s;
+  }
+  .quote{
+    opacity:0;
+animation: fadeIn 0.5s ease-out forwards;
+animation-delay: 4s;
+    
+  }
+
+hr{
+  height:2px;
+background-color:white;
+border-radius: 5px;
+}
